@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>a</title>
+</head>
+<body>
+{{ form.non_field_errors }}
+<div class="fieldWrapper">
+    {{ form.username.errors }}
+    <label for="{{ form.username.id_for_label }}">Email subject:</label>
+    {{ form.username }}
+</div>
+<div class="fieldWrapper">
+    {{ form.password.errors }}
+    <label for="{{ form.password.id_for_label }}">Your message:</label>
+    {{ form.password }}
+</div>
+
+</body>
+</html>

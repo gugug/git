@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ce4ac6f-a29d-435f-b179-3cc6acf696f2" name="Default" comment="" />
+    <ignored path="sina.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/sina$fans_and_attention.coverage" NAME="fans_and_attention Coverage Results" MODIFIED="1438419320935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sinacrawling" />
+    <SUITE FILE_PATH="coverage/sina$uidcrawl.coverage" NAME="uidcrawl Coverage Results" MODIFIED="1438393266591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sinacrawling" />
+    <SUITE FILE_PATH="coverage/sina$exercisse.coverage" NAME="exercisse Coverage Results" MODIFIED="1438173005020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sinacrawling" />
+    <SUITE FILE_PATH="coverage/sina$maintest1.coverage" NAME="maintest1 Coverage Results" MODIFIED="1438093827115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sina$getpage.coverage" NAME="getpage Coverage Results" MODIFIED="1438356864100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sinacrawling" />
+    <SUITE FILE_PATH="coverage/sina$writingtxt.coverage" NAME="writingtxt Coverage Results" MODIFIED="1438421688098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sinasave" />
+    <SUITE FILE_PATH="coverage/sina$main.coverage" NAME="main Coverage Results" MODIFIED="1438853586771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sina$multi.coverage" NAME="multi Coverage Results" MODIFIED="1438566116590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sina$database.coverage" NAME="database Coverage Results" MODIFIED="1438852654278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sina$logintest1.coverage" NAME="logintest1 Coverage Results" MODIFIED="1438136520307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sina$fans_and_follows.coverage" NAME="fans_and_follows Coverage Results" MODIFIED="1438612614488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sinacrawling" />
+    <SUITE FILE_PATH="coverage/sina$exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1438864022826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sina$main_mp.coverage" NAME="main_mp Coverage Results" MODIFIED="1438931606843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="sina" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="main_single.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_single.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="396">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_mp.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_mp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="846">
+              <folding>
+                <element signature="e#32#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fans_and_follow.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fans_and_follow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="32" selection-start="3528" selection-end="3528" vertical-scroll-proportion="0.0" vertical-offset="811" max-vertical-offset="1800">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exercise.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exercise.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="21" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1314">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uidcrawl.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uidcrawl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="21" selection-start="3527" selection-end="3527" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="universal.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/universal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="39" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="954">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="writingtxt.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/writingtxt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="22" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.5954198" vertical-offset="306" max-vertical-offset="864">
+              <folding>
+                <element signature="e#32#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="6" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="212" max-vertical-offset="900">
+              <folding>
+                <marker date="1438931606821" expanded="true" signature="587:624" placeholder="insert into ..." />
+                <marker date="1438931606821" expanded="true" signature="877:898" placeholder="create table..student..." />
+                <marker date="1438931606821" expanded="true" signature="877:986" placeholder="create table..wbtest1..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/searchtest1.py" />
+        <option value="$PROJECT_DIR$/maintest1.py" />
+        <option value="$PROJECT_DIR$/encodetest1.py" />
+        <option value="$PROJECT_DIR$/logintest1.py" />
+        <option value="$PROJECT_DIR$/sinalogin/mainlogintest1.py" />
+        <option value="$PROJECT_DIR$/sinacrawling/crawlNews.py" />
+        <option value="$PROJECT_DIR$/sinalogin/maintest2.py" />
+        <option value="$PROJECT_DIR$/sinalogin/maintest1.py" />
+        <option value="$PROJECT_DIR$/sinacrawling/exercisse.py" />
+        <option value="$PROJECT_DIR$/sinacrawling/crawltest1.py" />
+        <option value="$PROJECT_DIR$/writingtxt/writingtxt.py" />
+        <option value="$PROJECT_DIR$/sinacrawling/getpage.py" />
+        <option value="$PROJECT_DIR$/sinasave/__init__.py" />
+        <option value="$PROJECT_DIR$/multi.py" />
+        <option value="$PROJECT_DIR$/sinacrawling/OnlyCfansfollows.py" />
+        <option value="$PROJECT_DIR$/mpclass.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/sinacrawling/fans_and_follows.py" />
+        <option value="$PROJECT_DIR$/sinasave/writingtxt.py" />
+        <option value="$PROJECT_DIR$/sinacrawling/fans_and_follow.py" />
+        <option value="$PROJECT_DIR$/sinacrawling/uidcrawl.py" />
+        <option value="$PROJECT_DIR$/define.py" />
+        <option value="$PROJECT_DIR$/main_single.py" />
+        <option value="$PROJECT_DIR$/exercise.py" />
+        <option value="$PROJECT_DIR$/writingtxt.py" />
+        <option value="$PROJECT_DIR$/universal.py" />
+        <option value="$PROJECT_DIR$/uidcrawl.py" />
+        <option value="$PROJECT_DIR$/database.py" />
+        <option value="$PROJECT_DIR$/main_mp.py" />
+        <option value="$PROJECT_DIR$/fans_and_follow.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1301" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../database_test1/database_test1" />
+    <property name="SearchEverywhereHistory" value="" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/sinacrawling" />
+      <recent name="$PROJECT_DIR$/sinalogin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main_mp">
+    <configuration default="false" name="fans_and_follows" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sinacrawling" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sinacrawling/fans_and_follows.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="multi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multi.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main_mp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_mp.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="database" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="exercise" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="writingtxt" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sinasave" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/writingtxt.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="uidcrawl" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sinacrawling" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uidcrawl.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sina" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_single.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="8">
+      <item index="0" class="java.lang.String" itemvalue="Python.writingtxt" />
+      <item index="1" class="java.lang.String" itemvalue="Python.uidcrawl" />
+      <item index="2" class="java.lang.String" itemvalue="Python.main" />
+      <item index="3" class="java.lang.String" itemvalue="Python.fans_and_follows" />
+      <item index="4" class="java.lang.String" itemvalue="Python.multi" />
+      <item index="5" class="java.lang.String" itemvalue="Python.main_mp" />
+      <item index="6" class="java.lang.String" itemvalue="Python.database" />
+      <item index="7" class="java.lang.String" itemvalue="Python.exercise" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.main_mp" />
+        <item index="1" class="java.lang.String" itemvalue="Python.exercise" />
+        <item index="2" class="java.lang.String" itemvalue="Python.database" />
+        <item index="3" class="java.lang.String" itemvalue="Python.fans_and_follows" />
+        <item index="4" class="java.lang.String" itemvalue="Python.multi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ce4ac6f-a29d-435f-b179-3cc6acf696f2" name="Default" comment="" />
+      <created>1438073543675</created>
+      <updated>1438073543675</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24621513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13271604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30864197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/fans_and_follow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="34" selection-start="4952" selection-end="4952" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1872">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="14" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uidcrawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="37" selection-start="3558" selection-end="3558" vertical-scroll-proportion="0.0" vertical-offset="1206" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writingtxt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="918">
+          <folding>
+            <element signature="e#32#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_single.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="11" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_mp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="17" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="774">
+          <folding>
+            <element signature="e#32#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fans_and_follow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="34" selection-start="4952" selection-end="4952" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1872">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="14" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uidcrawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="37" selection-start="3558" selection-end="3558" vertical-scroll-proportion="0.0" vertical-offset="1206" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writingtxt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="918">
+          <folding>
+            <element signature="e#32#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uidcrawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="15" selection-start="4489" selection-end="4489" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="2232">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uidcrawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="50" selection-start="3922" selection-end="3922" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/searchtest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writingtxt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="40" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="1008">
+          <folding>
+            <element signature="e#32#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fans_and_follow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="11" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="1764" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_single.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="324">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/maintest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="24" selection-start="2322" selection-end="2346" vertical-scroll-proportion="0.0" vertical-offset="1008" max-vertical-offset="1170" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/maintest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="19" selection-start="2263" selection-end="2321" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1170" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uidcrawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="2804" selection-end="2804" vertical-scroll-proportion="0.0" vertical-offset="813" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="504" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/maintest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="19" selection-start="2263" selection-end="2321" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1170" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uidcrawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.0" vertical-offset="718" max-vertical-offset="1188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="20" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/maintest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="19" selection-start="2263" selection-end="2321" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1170" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uidcrawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="27" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/maintest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="48" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="1044" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/encodetest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="21" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/searchtest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/maintest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="48" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="1044" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/encodetest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="21" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/searchtest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/maintest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="24" selection-start="2248" selection-end="2248" vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="1044" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/encodetest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="57" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/searchtest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/encodetest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="21" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.51111114" vertical-offset="477" max-vertical-offset="882" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/maintest2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="317" selection-end="317" vertical-scroll-proportion="0.4888889" vertical-offset="0" max-vertical-offset="810" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/urllib2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="381" column="0" selection-start="12542" selection-end="12542" vertical-scroll-proportion="0.0" vertical-offset="6489" max-vertical-offset="26334" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="0" selection-start="7252" selection-end="7252" vertical-scroll-proportion="-0.0754717" vertical-offset="2700" max-vertical-offset="5958" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/searchtest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinalogin/maintest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="24" selection-start="2322" selection-end="2346" vertical-scroll-proportion="0.0" vertical-offset="536" max-vertical-offset="1116" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_single.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="21" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="1314">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="39" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="954">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uidcrawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="21" selection-start="3527" selection-end="3527" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_mp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="846">
+          <folding>
+            <element signature="e#32#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fans_and_follow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="32" selection-start="3528" selection-end="3528" vertical-scroll-proportion="0.0" vertical-offset="811" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="6" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="212" max-vertical-offset="900">
+          <folding>
+            <marker date="1438931606821" expanded="true" signature="587:624" placeholder="insert into ..." />
+            <marker date="1438931606821" expanded="true" signature="877:898" placeholder="create table..student..." />
+            <marker date="1438931606821" expanded="true" signature="877:986" placeholder="create table..wbtest1..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writingtxt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="22" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.5954198" vertical-offset="306" max-vertical-offset="864">
+          <folding>
+            <element signature="e#32#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

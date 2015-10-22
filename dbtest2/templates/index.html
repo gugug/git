@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homepage</title>
+</head>
+<body>
+    {% if success %}
+        <p>登录成功</p>
+        <a href="{% url 'logout_page' %}">退出登录</a>
+        <a href="{% url 'main_page' %}">点此进入主页</a>
+    {% elif existed %}
+        <a href="{% url 'logout_page' %}">退出登录</a>
+        <a href="{% url 'main_page' %}">点此进入主页</a>
+    {% else %}
+        <p>您还没有登录</p>
+        <a href="{% url 'login_page' %}">登录</a>
+        <a href="{% url 'register_page' %}">注册</a>
+    {% endif %}
+</body>
+</html>

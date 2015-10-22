@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    <form method="post">
+		{% if wrong %}
+            <p>请输入正确的账号和密码</p>
+        {% endif %}
+        {% if registered_email %}
+            <p>该邮箱已被注册</p>
+        {% endif %}
+        {% if registered_name %}
+            <p>该用户名已被注册</p>
+        {% endif %}
+        <!--<input type="email" placeholder="Email" name="email"><br>-->
+        <input type="text" placeholder='Username' name="username"><br>
+        <input type="password" placeholder="Password" name="password"><br>
+		<button type="submit">Register</button>
+    </form>
+    <p>已注册?<a href="{% url 'login_page' %}">请点击这里登录</a></p>
+</body>
+</html>
+
