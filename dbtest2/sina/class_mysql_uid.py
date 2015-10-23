@@ -1,6 +1,5 @@
 __author__ = 'gu'
 # -*- coding: UTF-8 -*-
-# 来源：疯狂的蚂蚁的博客www.server110.com总结整理
 import MySQLdb
 import urllib, urllib2
 import json

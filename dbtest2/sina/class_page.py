@@ -66,6 +66,17 @@ class Page(Uid):
         weibo = []
         # reload(sys)
         # sys.getdefaultencoding('utf8')
+        host_url="http://weibo.cn/u/" + str(i)
+        url_request=urllib2.Request(host_url,headers=self.header)
+        response=urllib2.urlopen(url_request)
+        text=response.read()
+        page_num = re.compile('跳页" />.*?/(.*?)页')  # 匹配微博页数
+        num = page_num.findall(text)
+        pm = int(num[0])
+        if b > pm:
+            b = pm
+        else:
+            pass
         for k in xrange(a, b):
             # if k%5==0:
             print "第", k, "页"
