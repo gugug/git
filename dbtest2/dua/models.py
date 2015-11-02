@@ -38,7 +38,7 @@ class GDFan(models.Model):
 class FansAdimin(admin.ModelAdmin):
     list_display = ('user_id','gdfans_id')
     list_filter =('user_id',)
-    search_fields = ('user_id','gdfollows_id',)
+    search_fields = ('user_id','gdfans_id',)
 
 class GDFollow(models.Model):
     user_id=models.CharField(max_length=20)

@@ -6,6 +6,7 @@ from django.contrib.auth import authenticate as au, login,logout
 from django.http import HttpResponseRedirect, HttpResponse,Http404
 from django.template.context import RequestContext
 from sina.class_mysql_uid import *
+from sina.class_page import *
 
 #json:dump(s)--把xx打包为json,load(s)--把json解压为xx;字典类型不能传输
 
@@ -66,10 +67,10 @@ def register_page(request): #9.2:js2可以连接到这个函数,表单名pwd3,pw
     if request.method=='POST':
         rf=RegisterForm(request.POST)
         try:
-            print request.POST
+            # print request.POST
             a=rf.is_valid() #填入表单
-            print 'a',a
-            print rf.cleaned_data
+            # print 'a',a
+            # print rf.cleaned_data
             # email=rf.cleaned_data['email']
             username=rf.cleaned_data['username1']
             password1=rf.cleaned_data['pwd3']
@@ -114,10 +115,26 @@ def main_page(request):
     #     return HttpResponseRedirect('main_page.html')
     return render(request,'main_page.html')
 
+class GetId(forms.Form):
+    number=forms.CharField(label='编号(0-1)')
+
 def get_id(request):
-    db=Database()
-    user_list = db.get_mysql_user()
-    dict_uid=dict()
-    dict_uid['user_id']=user_list
-    post_data=json.dumps(dict_uid)
-    return HttpResponse(post_data)
+    # if request.method=='POST':
+    #     uid=GetId(request.POST)
+    #     try:
+    #         iv=uid.is_valid()
+    #         num=uid.cleaned_data['number']
+            db=Database()
+            user_list = db.get_mysql_user(1,20)
+            dict_uid=dict()
+            dict_uid['user_id']=user_list
+            post_data=json.dumps(dict_uid)
+            pc=Page()
+            pc.getId(post_data)
+
+            return HttpResponse(post_data)
+    #     except (),e:
+    #         print e
+    #
+    # else :
+    #     return render(request,'get_id.html')

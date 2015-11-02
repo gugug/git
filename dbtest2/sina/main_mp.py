@@ -34,7 +34,7 @@ import django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE","dbtest2.settings")
 django.setup()
 import multiprocessing as mul
-from class_all_id import Uid
+from class_all_id import Sina
 
 
 

@@ -91,5 +91,9 @@ if __name__ == '__main__':
     wbtime=re.sub(today,t,text)
     print '2',wbtime #utf-8
     # print '4',chardet.detect(wbtime)['encoding']
-    # wbtime=wbtime.decode('gbk','ignore')
-    print '3',wbtime
+    wbtime=wbtime.encode('utf-8','ignore')
+    print '3',wbtime,type(wbtime)
+
+    file=open('uid=.txt','w+')
+    file.write('111'+wbtime)
+    file.close()
