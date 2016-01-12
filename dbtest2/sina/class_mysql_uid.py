@@ -13,7 +13,7 @@ class Database:
             'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:35.0) Gecko/20100101 Firefox/35'}
 
         self.conn= MySQLdb.connect(
-            host='192.168.1.57',
+            host='',
             port = 3306,
             user='yc',
             passwd='uliuli520',
@@ -44,3 +44,6 @@ class Database:
             return self.user_list
 
 
+
+# a = Database()
+# print a.get_mysql_user(1,4)

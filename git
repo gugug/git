@@ -1,0 +1,247 @@
+1.首先，你可以试着输入git，看看系统有没有安装Git：
+
+$ git
+The program 'git' is currently not installed. You can install it by typing:
+sudo apt-get install git
+
+像上面的命令，有很多Linux会友好地告诉你Git没有安装，还会告诉你如何安装Git。
+
+如果你碰巧用Debian或Ubuntu Linux，通过一条sudo apt-get install git就可以直接完成Git的安装，非常简单。
+
+git --version   查看个git版本
+
+
+2.第一步：创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：
+mkdir 创建文件夹
+  cd 文件夹
+  pwd 显示文件夹路径
+第二步，通过git init命令把这个目录变成Git可以管理的仓库：git init
+显示内容为：
+$ git init
+Initialized empty Git repository in /Users/michael/learngit/.git/
+
+瞬间Git就把仓库建好了，而且告诉你是一个空的仓库（empty Git repository），细心的读者可以发现当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了。
+
+ps:首先这里再明确一下，所有的版本控制系统，其实只能跟踪文本文件的改动，比如TXT文件，网页，所有的程序代码等等，Git也不例外。版本控制系统可以告诉你每次的改动，比如在第5行加了一个单词“Linux”，在第8行删了一个单词“Windows”。而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，也就是只知道图片从100KB改成了120KB，但到底改了啥，版本控制系统不知道，也没法知道。
+
+不幸的是，Microsoft的Word格式是二进制格式，因此，版本控制系统是没法跟踪Word文件的改动的，前面我们举的例子只是为了演示，如果要真正使用版本控制系统，就要以纯文本方式编写文件。
+
+因为文本是有编码的，比如中文有常用的GBK编码，日文有Shift_JIS编码，如果没有历史遗留问题，强烈建议使用标准的UTF-8编码，所有语言使用同一种编码，既没有冲突，又被所有平台所支持。
+
+使用Windows的童鞋要特别注意：
+
+千万不要使用Windows自带的记事本编辑任何文本文件。原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。建议你下载Notepad++代替记事本，不但功能强大，而且免费！记得把Notepad++的默认编码设置为UTF-8 without BOM即可：
+
+3.现在我们编写一个readme.txt文件，内容如下：
+Git is a version control system.
+Git is free software.
+一定要放到git仓库目录下（子目录也行），因为这是一个Git仓库，放到其他地方Git再厉害也找不到这个文件。
+第一步：执行 git add readme.txt
+没有显示反应就对了
+
+第二步，用命令git commit告诉Git，把文件提交到仓库：
+$ git commit -m "wrote a readme file"
+[master (root-commit) cb926e7] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+简单解释一下git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录
+git commit命令执行成功后会告诉你，1个文件被改动（我们新添加的readme.txt文件），插入了两行内容（readme.txt有两行内容）
+
+****
+小结**
+****
+现在总结一下今天学的两点内容：
+
+初始化一个Git仓库，使用git init命令。
+
+添加文件到Git仓库，分两步：
+
+    第一步，使用命令git add <file>，注意，可反复多次使用，添加多个文件；
+
+    第二步，使用命令git commit，完成。
+
+---------------------------
+我们已经成功地添加并提交了一个readme.txt文件，现在，是时候继续工作了，于是，我们继续修改readme.txt文件，改成如下内容：
+Git is a distributed version control system.
+Git is free software.
+运行git status命令看看结果
+git status命令可以让我们时刻掌握仓库当前的状态，上面的命令告诉我们，readme.txt被修改过了，但还没有准备提交的修改。
+
+虽然Git告诉我们readme.txt被修改了，但如果能看看具体修改了什么内容
+需要用git diff这个命令看看
+
+知道了对readme.txt作了什么修改后，再把它提交到仓库就放心多了，提交修改和提交新文件是一样的两步，第一步是git add：
+$ git add readme.txt
+同样没有任何输出。在执行第二步git commit之前，我们再运行git status看看当前仓库的状态：
+git status告诉我们，将要被提交的修改包括readme.txt，下一步，就可以放心地提交了：
+提交后，我们再用git status命令看看仓库的当前状态：
+*****
+小结*
+*****
+    要随时掌握工作区的状态，使用git status命令。
+
+    如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
+-------------版本退回----------
+本控制系统肯定有某个命令可以告诉我们历史记录，在Git中，我们用git log命令查看：git log命令显示从最近到最远的提交日志
+如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数：
+
+好了，现在我们启动时光穿梭机，准备把readme.txt回退到上一个版本，也就是“add distributed”的那个版本，怎么做呢？
+
+首先，Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，也就是最新的提交3628164...882e1e0（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+
+--------------
+想再回去已经回不去了，肿么办？
+办法其实还是有的，只要上面的命令行窗口还没有被关掉，你就可以顺着往上找啊找啊，找到那个append GPL的commit id是3628164...，于是就可以指定回到未来的某个版本：
+
+$ git reset --hard 3628164
+HEAD is now at 3628164 append GPL
+
+版本号没必要写全，前几位就可以了，Git会自动去找。当然也不能只写前一两位，因为Git可能会找到多个版本号，就无法确定是哪一个了。
+当你用$ git reset --hard HEAD^回退到add distributed版本时，再想恢复到append GPL，就必须找到append GPL的commit id。Git提供了一个命令git reflog用来记录你的每一次命令：
+*****
+小结*
+*****
+现在总结一下：
+
+    HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+
+    穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+
+    要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
+
+------
+命令git checkout -- readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
+
+一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+
+一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+
+总之，就是让这个文件回到最近一次git commit或git add时的状态。
+看看readme.txt的文件内容：cat readme.txt
+git checkout -- file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令 要有空格
+
+写了一些胡话，还git add到暂存区了：
+git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本
+****
+小结*
+****
+又到了小结时间。
+场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+
+--------删除--
+在Git中，删除也是一个修改操作，我们实战一下，先添加一个新文件test.txt到Git并且提交：
+一般情况下，你通常直接在文件管理器中把没用的文件删了，或者用rm命令删了：
+$ rm test.txt
+这个时候，Git知道你删除了文件，因此，工作区和版本库就不一致了，git status命令会立刻告诉你哪些文件被删除了：
+
+现在你有两个选择，一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit：
+现在，文件就从版本库中被删除了。
+$ git rm test.txt
+
+$ git commit -m "remove test.txt"
+
+另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：
+$ git checkout -- test.txt
+
+git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
+*****
+小结*
+*****
+命令git rm用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。
+
+
+-----远程仓库---
+这个世界上有个叫GitHub的神奇的网站，从名字就可以看出，这个网站就是提供Git仓库托管服务的，所以，只要注册一个GitHub账号，就可以免费获得Git远程仓库。
+
+如果一切顺利的话，可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人
+
+然后用文本编辑工具打开该文件，我用的是vim,所以命令是：
+
+vim ~/.ssh/id_rsa.pub
+
+
+
+接着拷贝.ssh/id_rsa.pub文件内的所以内容，将它粘帖到github帐号管理中的添加SSH key界面中。
+
+打开github帐号管理中的添加SSH key界面的步骤如下：
+
+1. 登录github
+
+2. 点击右上方的Accounting settings图标
+
+3. 选择 SSH key
+
+4. 点击 Add SSH key
+
+在出现的界面中填写SSH key的名称，填一个你自己喜欢的名称即可，然后将上面拷贝的~/.ssh/id_rsa.pub文件内容粘帖到key一栏，在点击“add key”按钮就可以了。
+----------------------
+查看自己的私钥
+gu@Ugly:~$ cd ~/.ssh
+gu@Ugly:~/.ssh$ ls
+id_rsa  id_rsa.pub  id_rsa_yc  id_rsa_yc.pub  known_hosts
+gu@Ugly:~/.ssh$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzOQvoSZEljxBNvYu627W/W6HKpw6ZiuMusfgBSD4u5V9qPDXJZ7hCfxauiZG1FmJzP2u93lQ0Y4b6jyHoflv5/H3/cSd6ggIfliO0okqavKTjP7xY7ze9eVbSmtIa4NYR+LYUGh8RJ0lawfuAoat55dEH/ssMqqEwcrQFNsxuagAzoysccsR51nBjI1Zxq28pn1O1dBU3skbnjUURyo7On0fM+eMFfqvq6/RMObFhMtd8XUpsYnmEGXmuqm7gFYnCRrDVWGDy6MM3t4PbtpPRo2tXAdEEGpSIBWtKOWP75tnGBKzigXUa0pFdLKIVPpaTT3bqbhrLjpmTofp2pwqh gu@Ugly
+gu@Ugly:~/.ssh$ 
+
+
+----------------------
+在Repository name填入git，其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：
+目前，在GitHub上的这个learngit仓库还是空的，GitHub告诉我们，可以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到GitHub仓库。
+现在，我们根据GitHub的提示，在本地的git仓库下运行命令：
+$ git remote add origin https://github.com/gugug/git.git
+下一步，就可以把本地库的所有内容推送到远程库上：
+由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+$ git push -u origin master
+从现在起，只要本地作了提交，就可以通过命令：
+$ git push origin master
+(即git add readme.txt
+或者上传文件夹: agit add 文件夹名字
+  git commit -m "add file"
+  git push origin master
+)
+
+*****
+小结*
+*****
+要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+
+----------上次我们讲了先有本地库，后有远程库的时候，如何关联远程库。--------------
+
+假设我们从零开发，那么最好的方式是先创建远程库，然后，从远程库克隆。
+首先，登陆GitHub，创建一个新的仓库，名字叫gitskills：
+我们勾选Initialize this repository with a README，这样GitHub会自动为我们创建一个README.md文件。创建完毕后，可以看到README.md文件
+现在，远程库已经准备好了，下一步是用命令git clone克隆一个本地库：
+$ git clone git@github.com:gugug/gitskills.git
+*****
+小结*
+****
+要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+
+Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+
+
+-------------分支管理----------
+小结
+
+Git鼓励大量使用分支：
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+
+

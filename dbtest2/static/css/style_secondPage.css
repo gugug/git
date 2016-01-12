@@ -1,0 +1,252 @@
+body {	margin: 0 0 0 0;
+	font-family: "微软雅黑";
+	margin: 0;
+	padding:0;
+}
+
+.background {	
+	width:100%;
+	height:667px;
+	background-image: url("../image2/bg3.jpg");
+	background-repeat:no-repeat;	
+}
+
+.bigbox {
+	width:800px;
+	height:600px;
+	background: url("../image2/whiteLine.png");
+	position:absolute;
+	left:50%;
+	margin-left:-400px;
+}
+
+.head{
+	width:800px;
+	height:100px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	margin-left:0px;
+	margin-top: 0px;
+	padding: 0;	
+}
+
+.left{
+	width:110px;
+	height:460px;
+	position: absolute;
+	left:40px;
+	top:120px;
+}
+
+#line_chart{
+	position: absolute;
+	top:100px;
+	left:170px;
+	height:260px;
+	width:600px;
+}
+#pie_chart{
+	position: absolute;
+	top: 388px;
+	left:188px;
+	height:188px;
+	width:188px;
+}
+
+#bar_chart{
+	position: absolute;
+	top:388px;
+	left:400px;
+	height:188px;
+	width:372px;
+}
+
+.button1,.button2,.button3,.button4,.button5,.button6,.button7,.button8{
+	width:110px;
+	height:40px;
+	left:0px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.button1{
+	top:0px;
+	background: url("../image2/kaixin.png");
+}
+.button1:hover{
+	background: url("../image2/kaixin_hover.png");
+}
+
+.button2{
+	top:60px;
+	background: url("../image2/kuaile.png");
+}
+.button2:hover{
+	background: url("../image2/kuaile_hover.png");
+}
+
+.button3{
+	top:120px;
+	background: url("../image2/manyi.png");
+}
+.button3:hover{
+	background: url("../image2/manyi_hover.png");
+}
+
+.button4{
+	top:180px;
+	background: url("../image2/jingya.png");
+}
+.button4:hover{
+	background: url("../image2/jingya_hover.png");
+}
+
+.button5{
+	top:240px;
+	background: url("../image2/buman.png");
+}
+.button5:hover{
+	background: url("../image2/buman_hover.png");
+}
+
+.button6{
+	top:300px;
+	background: url("../image2/wunai.png");
+}
+.button6:hover{
+	background: url("../image2/wunai_hover.png");
+}
+
+.button7{
+	top:360px;
+	background: url("../image2/nanguo.png");
+}
+.button7:hover{
+	background: url("../image2/nanguo_hover.png");
+}
+
+.button8{
+	top:420px;
+	background: url("../image2/tonghen.png");
+}
+.button8:hover{
+	background: url("../image2/tonghen_hover.png");
+}
+
+#logo{
+	position:absolute;
+	left:40px;
+	bottom:20px;
+	cursor: pointer;
+}
+#label{
+	position: absolute;
+	left:170px;
+	top:32px;
+}
+
+#btnLogin{
+	position:absolute;
+	right:95px;
+	bottom:38px;
+}
+
+#btnSigin{
+	position:absolute;
+	right:40px;
+	bottom:38px;
+}
+#close,#close1{ 
+	background:url(../image2/xx.png);
+	background-repeat:no-repeat; 
+	width:30px; 
+	height:30px; 
+	cursor:pointer;
+	position:absolute; 
+	right:5px; 
+	top:10px; 
+	text-indent:-999em;	
+}
+#mask,#mask1{ 
+	background-color:#000;
+	opacity:0.5;
+	filter: alpha(opacity=50); 
+	position:absolute; 
+	left:0;
+	top:0;
+	z-index: 1000;
+}
+	
+#login,#sigin{ 
+	position:fixed;
+	z-index: 1001;
+}
+
+.loginCon,.siginCon{ 
+	position:relative; 
+	width:380px;
+	height:280px;
+	background:rgba(255,255,255,0.9) center center no-repeat;
+	border-radius: 10px;
+	border-width:0;
+}
+
+ul li 
+{
+list-style: none;
+margin-top: 10px;
+}
+
+ul 
+{
+	padding: 0px;
+	position: absolute;
+	margin-left: 60px;
+	margin-top: 108px;
+}
+ul li input 
+{	
+	font-size: 14px;
+	border-style: none;
+	border:1px solid #c0c0c0;
+	text-indent:4px;
+	outline-style: none;
+	color:#030303;
+	outline-style: none;
+
+}
+
+ul li input[type="text"] 
+{
+	width:260px;
+	height:28px;
+	border-radius: 5px;
+	padding: 0;
+	
+
+}
+ul li input[type="password"] 
+{
+	width:260px;
+	height:28px;
+	border-radius: 5px;
+	padding: 0;
+	
+}
+ul li input[type="submit"] 
+{
+	width:262px;
+	height:32px;
+	letter-spacing: 3px;
+	background-color: #fa8c9e;
+	transition:0.5s;
+	color: white;
+	border-radius:5px;
+	border-width: 0;
+	cursor: pointer;
+}
+ul li input[type="submit"]:hover 
+{
+	background-color: #f84d6e;
+}

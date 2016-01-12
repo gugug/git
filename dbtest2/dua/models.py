@@ -35,6 +35,7 @@ class GDFan(models.Model):
         unique_together=('user_id','gdfans_id')
 
 
+
 class FansAdimin(admin.ModelAdmin):
     list_display = ('user_id','gdfans_id')
     list_filter =('user_id',)
@@ -63,6 +64,7 @@ class SinaUser(models.Model):
     class Meta:
         db_table='sinauser'
         unique_together=('user_id','user_name')
+        unique_together = (('user_id','user_name'),)
 
 class MyUser(models.Model):
     name=models.CharField(max_length=100)
@@ -74,8 +76,11 @@ class MyUser(models.Model):
         db_table='myuser'
 
 
+
+
 class MyUsersAdimin(admin.ModelAdmin):
     list_display = ('name',)
+
 
 class SinaUserAdimin(admin.ModelAdmin):
     list_display = ('user_id','user_name')

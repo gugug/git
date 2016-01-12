@@ -25,11 +25,13 @@ class Login:  # 模拟登陆
         self.headers = {'User-Agent': 'Mozilla/' + str(
             float(int(random.uniform(1, 6)))) + '(X11; Ubuntu; Linux i686; rv:35.0) Gecko/20100101 Firefox/' + str(
             float(int(random.uniform(29, 36))))}
-        self.account = [('nrrfdzpc@sina.cn','tttt5555'),('18826103742','183182'),('shuqunkeji@sina.com','shujuwajue'),
-            ('gdufsiiip@sina.com','shujuwajue'),('18819466768','qq407886535'),('zgryejmd@sina.cn','tttt5555'),('nowccqpq@sina.cn','tttt5555'),
-                      ('odlmyfbw@sina.cn','tttt5555'),('ajjqbwkm@sina.cn','tttt5555'),('xgakyvbj@sina.cn','tttt5555'),
-                      ('coiarurd@sina.cn','tttt5555'),('70705420yc@sina.com','1234567'),('gwcrawler1@126.com','321456'),
-                        ('734093894@qq.com','183182'),('1939777358@qq.com','123456a')]
+        self.account = [('nrrfdzpc@sina.cn', 'tttt5555'), ('18826103742', '183182'),
+                        ('shuqunkeji@sina.com', 'shujuwajue'), ('gdufsiiip@sina.com', 'shujuwajue'),
+                        ('zgryejmd@sina.cn', 'tttt5555'), ('nowccqpq@sina.cn', 'tttt5555'),
+                        ('odlmyfbw@sina.cn', 'tttt5555'), ('ajjqbwkm@sina.cn', 'tttt5555'),
+                        ('xgakyvbj@sina.cn', 'tttt5555'), ('coiarurd@sina.cn', 'tttt5555'),
+                        ('70705420yc@sina.com', '1234567'), ('gwcrawler1@126.com', '321456'),
+                        ('734093894@qq.com', '183182'), ('1939777358@qq.com', '123456a')]
 
     def getHostUrl(self):
         HostUrl = "http://login.weibo.cn/login/?backURL=&backTitle=&vt=4&revalid=2&ns=1"
@@ -106,3 +108,7 @@ class Login:  # 模拟登陆
         print account
         self.login(account[0], account[1])
         time.sleep(random.randint(0, 3))
+
+# l=Login()
+# l.login("nowccqpq@sina.cn","tttt5555")
+# l.slogin()

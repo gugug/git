@@ -26,16 +26,11 @@ class Uid(Login):
     def __init__(self):
         Login.__init__(self)
         self.base_dir='/home/gu/PycharmProjects/dbtest2/sina/results/'
-        self.text_dir='/home/gu/PycharmProjects/dbtest2/sina/blogtext/'
+        self.text_dir='/home/gu/PycharmProjects/dbtest2/sina/blogtext14000-15000/'
         self.default_title ="anonymous"
-        self.header = {
-        'User-Agent' : 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:35.0) Gecko/20100101 Firefox/35'}
-        # 'cookie':'SUHB=0auQu-VKohQewN; Hm_lvt_16374ac3e05d67d6deb7eae3487c2345=1438853337; gsid_CTandWM=4uNEa18a1iXLheOZzx4XAnLede5; _T_WM=9680670dc09c465d401000970f08a051'}
-        # 'cookie':'SUB=_2A254_6A0DeTxGeNI7VER-S3EzD-IHXVYA8B8rDV6PUJbrdAKLUbekW1-zwbkLzaRdvZqxj6DUj5ImWtgBQ..; expires=Sun'
-        # ', 18-Oct-2015 08:50:44 GMT; path=/; domain=.weibo.cn; httponly'
-        # 'gsid_CTandWM=4uNEa18a1iXLheOZzx4XAnLede5; expires=Sun, 18-Oct-2015 08:50:44 GMT; path=/; domain=.weibo'
-        # '.cn; httponly'
-        # 'PHPSESSID=f9fda472d39c7edf93bae7a2cd950d7f; path=/'}
+        self.header = {'User-Agent': 'Mozilla/' + str(
+            float(int(random.uniform(1, 6)))) + '(X11; Ubuntu; Linux i686; rv:35.0) Gecko/20100101 Firefox/' + str(
+            float(int(random.uniform(29, 36))))}
         self.user_list=[]
 
         self.fans_list=[]
@@ -43,14 +38,21 @@ class Uid(Login):
         self.follow_list = []
         self.gd_follow = []   #以上都是class_all_id里要用的
 
-#程序休眠,避免一次爬太多
+#程序休眠及更换账号
     def sleep(self):
-        account=self.account[random.randint(0,len(self.account)-1)]
-        print account
-        self.login(account[0],account[1])
-        time.sleep(random.randint(0,5))
-
-
+        try:
+            account=self.account[random.randint(0,len(self.account)-1)]
+            print account
+            self.login(account[0],account[1])
+            time.sleep(random.randint(0,10))
+        except (AttributeError):
+            try:
+                account=self.account[random.randint(0,len(self.account)-1)]
+                print account
+                self.login(account[0],account[1])
+            except:
+                print "大量账号无法使用"
+                raise Exception
 
     def getUser(self,citystart,cityend,pagestart,pageend): #输入城市编号和页数,返回用户id列表并存入数据库
         print '正在获取用户...'

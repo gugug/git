@@ -1,0 +1,249 @@
+body {	margin: 0 0 0 0;
+	font-family: "微软雅黑";
+	margin: 0;
+	padding:0;
+}
+
+.background {	
+	width:100%;
+	height:667px;
+	background-image: url("../image1/bg3.jpg");
+	background-repeat:no-repeat;	
+
+}
+
+.bigbox {
+	width:800px;
+	height:600px;
+	background: url("../image1/whiteLine.png");
+	position:absolute;
+	left:50%;
+	margin-left:-400px;
+}
+
+.head{
+	width:800px;
+	height:100px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	margin-left:0px;
+	margin-top: 0px;
+	padding: 0;
+	
+}
+.left{
+	width:400px;
+	height:400px;
+	position:absolute;
+	left:0px;
+	top:100px;
+	margin-left:0px;
+	margin-top: 0px;
+}
+.right{
+	width:400px;
+	height:400px;
+	position:absolute;
+	left:400px;
+	top:100px;
+	margin-left:0px;
+	margin-top: 0px;
+}
+.bottom{
+	width:800px;
+	height:100px;
+	position:absolute;
+	left:0px;
+	top:500px;
+	margin-left:0px;
+	margin-top: 0px;
+}
+
+.center
+{
+	width:360px;
+	height:360px;
+	position:absolute;
+	margin:20px 20px;
+}
+
+#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9
+{
+	width:120px;
+	height:120px;
+	position:absolute;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+#box1,#box2,#box3
+{
+	top:0px;
+}
+#box4,#box8,#box9
+{
+	top:120px;
+}
+#box5,#box6,#box7
+{
+	top:240px;
+}
+#box1,#box7,#box8
+{
+	left:0px;
+}
+#box2,#box9,#box7
+{
+	left:120px;
+}
+#box3,#box4,#box5
+{
+	left:240px;
+}
+
+#oPie1,#oPie2,#oPie3,#oPie4,#oPie5,#oPie6,#oPie7,#oPie8
+{
+
+	margin-top: 2.5px;
+	margin-left: 0.6px;
+	height:120px;
+	width:120px;
+	position: absolute;
+	z-index: 3;
+}
+
+#oTu1,#oTu2,#oTu3,#oTu4,#oTu5,#oTu6,#oTu7,#oTu8,#oTu9
+{
+	height:80px;
+	width:80px;
+	left:50%;
+	margin-left: -40px;
+	top:50%;
+	margin-top: -40px;
+	position: absolute;
+	z-index: 1;
+}
+
+#oTu9 img{
+	-webkit-transition: -webkit-transform 2s ease-out;
+	-moz-transition: -moz-transform 2s ease-out;
+	-o-transition: -o-transform 2s ease-out;
+	-ms-transition: -ms-transform 2s ease-out;
+}
+
+#oTu9 img:hover{
+	-webkit-transform: rotateZ(720deg);
+	-moz-transform: rotateZ(720deg);
+	-o-transform: rotateZ(720deg);
+	-ms-transform: rotateZ(720deg);
+	transform: rotateZ(360deg);
+}
+
+#logo{
+	position:absolute;
+	left:40px;
+	bottom:20px;
+}
+#btnLogin{
+	position:absolute;
+	right:95px;
+	bottom:38px;
+}
+
+#btnSigin{
+	position:absolute;
+	right:40px;
+	bottom:38px;
+}
+#close,#close1{ 
+	background:url(../image1/xx.png);
+	background-repeat:no-repeat; 
+	width:30px; 
+	height:30px; 
+	cursor:pointer;
+	position:absolute; 
+	right:5px; 
+	top:10px; 
+	text-indent:-999em;	
+}
+#mask,#mask1{ 
+	background-color:#000;
+	opacity:0.5;
+	filter: alpha(opacity=50); 
+	position:absolute; 
+	left:0;
+	top:0;
+	z-index: 1000;
+}
+	
+#login,#sigin{ 
+	position:fixed;
+	z-index: 1001;
+}
+
+.loginCon,.siginCon{ 
+	position:relative; 
+	width:380px;
+	height:280px;
+	background:rgba(255,255,255,0.9) center center no-repeat;
+	border-radius: 10px;
+	border-width:0;
+}
+
+ul li 
+{
+list-style: none;
+margin-top: 10px;
+}
+
+ul 
+{
+	padding: 0px;
+	position: absolute;
+	margin-left: 60px;
+	margin-top: 108px;
+}
+ul li input 
+{	
+	font-size: 14px;
+	border-style: none;
+	border:1px solid #c0c0c0;
+	text-indent:4px;
+	outline-style: none;
+	color:#030303;
+	outline-style: none;
+
+}
+
+ul li input[type="text"] 
+{
+	width:260px;
+	height:28px;
+	border-radius: 5px;
+	padding: 0;
+	
+
+}
+ul li input[type="password"] 
+{
+	width:260px;
+	height:28px;
+	border-radius: 5px;
+	padding: 0;
+}
+ul li input[type="submit"] 
+{
+	width:262px;
+	height:32px;
+	letter-spacing: 3px;
+	background-color:#f84d6e;
+	transition:0.5s;
+	color: white;
+	border-radius:5px;
+	border-width: 0;
+	cursor: pointer;
+}
+ul li input[type="submit"]:hover 
+{
+	background-color: #fa8c9e;
+}

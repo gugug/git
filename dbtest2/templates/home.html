@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>homepage</title>
+	<link rel="stylesheet" href="../static/css/style.css">
+	<script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/highcharts.js"></script>
+	<script language="JavaScript" src="../static/drawjs/home_line.js"></script>
+	<script language="JavaScript" src="../static/js/login_sigin.js"></script>
+	<script language="JavaScript" src="../static/drawjs/homepage_pie1.js"></script>
+	<script language="JavaScript" src="../static/drawjs/homepage_pie2.js"></script>
+	<script language="JavaScript" src="../static/drawjs/homepage_pie3.js"></script>
+	<script language="JavaScript" src="../static/drawjs/homepage_pie4.js"></script>
+	<script language="JavaScript" src="../static/drawjs/homepage_pie5.js"></script>
+	<script language="JavaScript" src="../static/drawjs/homepage_pie6.js"></script>
+	<script language="JavaScript" src="../static/drawjs/homepage_pie7.js"></script>
+	<script language="JavaScript" src="../static/drawjs/homepage_pie8.js"></script>
+	<script>
+        function show(n){
+         	document.getElementById(n).style.display="block";
+        }
+        function hide(n){
+         	document.getElementById(n).style.display="none";
+        }      
+    </script>	
+</head>
+<body>
+	<div class="background">
+		<div class="bigbox">
+			<div class="head">
+				<div id="logo"><img src="../static/image1/logo.png"></div>
+				<div id="btnLogin" style="cursor:pointer"><img src="../static/image1/login.png"></div>
+				<div id="btnSigin" style="cursor:pointer"><img src="../static/image1/sigin.png"></div>
+			</div>
+			<div class="bottom"></div>
+			<div class="left">
+				<div class="center">
+					<div id="box1">	
+						<div id="oTu1" onmouseenter="show('oPie1')" onmouseleave="hide('oPie1')"><img src="../static/image1/circles/kaixin.png"></div>
+               			 <a href="kaixin.html" target="_blank"><div id="oPie1" style="display:none" onmouseenter="show('oPie1')" onmouseleave="hide('oPie1')"></div></a>
+					</div>
+					<div id="box2">
+						<div id="oTu2" onmouseenter="show('oPie2')" onmouseleave="hide('oPie2')"><img src="../static/image1/circles/kuaile.png"></div>
+               			 <a href="kuaile.html" target="_blank"><div id="oPie2" style="display:none" onmouseenter="show('oPie2')" onmouseleave="hide('oPie2')"></div></a>
+					</div>
+					<div id="box3">
+						<div id="oTu3" onmouseenter="show('oPie3')" onmouseleave="hide('oPie3')"><img src="../static/image1/circles/manyi.png"></div>
+               			<a href="manyi.html" target="_blank"><div id="oPie3" style="display:none" onmouseenter="show('oPie3')" onmouseleave="hide('oPie3')"></div></a>
+					</div>
+					<div id="box4">
+						<div id="oTu4" onmouseenter="show('oPie4')" onmouseleave="hide('oPie4')"><img src="../static/image1/circles/jingya.png"></div>
+               			<a href="jingya.html" target="_blank"><div id="oPie4" style="display:none" onmouseenter="show('oPie4')" onmouseleave="hide('oPie4')"></div></a>
+					</div>
+					<div id="box5">
+						<div id="oTu5" onmouseenter="show('oPie5')" onmouseleave="hide('oPie5')"><img src="../static/image1/circles/buman.png"></div>
+               			<a href="buman.html" target="_blank"><div id="oPie5" style="display:none" onmouseenter="show('oPie5')" onmouseleave="hide('oPie5')"></div></a>
+					</div>
+					<div id="box6">
+						<div id="oTu6" onmouseenter="show('oPie6')" onmouseleave="hide('oPie6')"><img src="../static/image1/circles/wunai.png"></div>
+               			<a href="wunai.html" target="_blank"><div id="oPie6" style="display:none" onmouseenter="show('oPie6')" onmouseleave="hide('oPie6')"></div></a>
+					</div>
+					<div id="box7">
+						<div id="oTu7" onmouseenter="show('oPie7')" onmouseleave="hide('oPie7')"><img src="../static/image1/circles/nanguo.png"></div>
+               			<a href="nanguo.html" target="_blank"><div id="oPie7" style="display:none" onmouseenter="show('oPie7')" onmouseleave="hide('oPie7')"></div></a>
+					</div>
+					<div id="box8">
+						<div id="oTu8" onmouseenter="show('oPie8')" onmouseleave="hide('oPie8')"><img src="../static/image1/circles/tonghen.png"></div>
+               			<a href="tonghen.html" target="_blank"><div id="oPie8" style="display:none" onmouseenter="show('oPie8')" onmouseleave="hide('oPie8')"></div></a>
+					</div>
+					<div id="box9">
+						<div id="oTu9"><img src="../static/image1/star.png"></div>
+					</div>
+				</div>
+			</div>
+			<div class="right" id="right"></div>
+		</div>
+	</div>
+</body>
+</html>
