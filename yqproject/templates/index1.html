@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<form action="{% url 'linechart' %}" name="SearchForm" method="post" enctype="multipart/form-data">
+    search:<input type="text" name="input_words" size="100">
+
+    <button type="submit" >submit</button>
+</form>
+
+</body>
+</html>

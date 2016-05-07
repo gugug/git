@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网络图</title>
+    {% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'styles/network.css' %}">
+</head>
+<body>
+    <div id="container">
+		<div id="header">
+			<span  id="hamburger-icon" onclick="change()">
+
+			</span>
+			<span class="more-icon" id="more-icon">
+				<img src={% static "images/more.png" %}>
+				<span class="hide" id="more-list">
+					<ul>
+						<li>关于我们</li>
+						<li>版权信息</li>
+					</ul>
+				</span>
+			</span>
+		</div>
+		<div id="pageBody">
+			<div id="sidebar">
+				<div id="title">
+					<h2>{{ event }}</h2>
+				</div>
+                <div>
+                    <p><span>参与规模: </span>410</p>
+                    <span class="con">
+                        <h4>关键人物:</h4>
+                        <p>南方人物周刊</p> <p>财经网</p> <p>新浪科技</p>
+                            <p>人民日报</p> <p>人民网</p> <p>环球时报</p> <p>21世纪经济报道</p> <p>共识网</p>
+
+
+                    </span>
+
+                </div>
+{#				<button id="haha">more</button>#}
+			</div>
+			<div id="content">
+				<div id="network"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="{% static 'scripts/jquery-1.10.1.js' %}"></script>
+	<script type="text/javascript" src="{% static 'scripts/vis.js' %}"></script>
+{#	<script type="text/javascript" src="{% static 'scripts/new.js' %}"></script>#}
+    <script type="text/javascript" src={% static "scripts/sidebarChange.js" %}></script>
+    <script>
+        var color = 'gray';
+	    var len = undefined;
+	    var container = document.getElementById('network');
+	    var data = {
+{#            nodes:nodes,#}
+{#            edges:edges,#}
+	        nodes: {{ node_data |safe }},
+	        edges: {{ edge_data |safe }}
+	    };
+	   	var options = {
+	            nodes: {
+	                shape: 'dot',
+	                size: 16
+	        	},
+	        	physics: {
+	            	forceAtlas2Based: {
+		                gravitationalConstant: -30,
+		                centralGravity: 0.02,
+		                springLength: 190,
+		                springConstant: 0.18
+	            	},
+		            maxVelocity: 100,
+		            solver: 'forceAtlas2Based',
+		            timestep: 0.35,
+		            stabilization: {iterations: 150}
+	        	}
+	    };
+	    network = new vis.Network(container, data, options); 
+	</script>
+</body>
+</html>
