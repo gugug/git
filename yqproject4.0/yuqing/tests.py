@@ -1,10 +1,11 @@
 import paramiko 
 import os 
 import datetime 
-hostname='74.63.229.*' 
-username='root' 
-password='abc123' 
-port=22 
+# 需要加上信息
+hostname='' 
+username='' 
+password='' 
+port=
 local_dir='/tmp/' 
 remote_dir='/tmp/test/' 
 if __name__=="__main__": 
