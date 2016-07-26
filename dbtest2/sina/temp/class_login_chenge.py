@@ -86,6 +86,3 @@ class MoblieWeibo:  #模拟登陆
         response=urllib2.urlopen(request)
         text=response.read()
         # print text
-
-# login=MoblieWeibo()
-# login.login('70705420yc@sina.com','1234567')
