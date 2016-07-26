@@ -756,9 +756,7 @@ class WeiboPage():
         return no_repeat_list, blog_origin  # 返回转发路径和博文源
 
 def main_weibo():
-    MoblieWeibo().login('odlmyfbw@sina.cn', 'tttt5555')
-
-    # 'odlmyfbw@sina.cn','tttt5555')#'1939777358@qq.com', '123456a')  # 734093894@qq.com   18826103742
+    MoblieWeibo().login('', '')
 
     account = {
         "人民日报": 2803301701, "新浪新闻": 2028810631, "凤凰周刊": 1267454277,
