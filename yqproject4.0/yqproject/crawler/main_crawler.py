@@ -21,8 +21,7 @@ def main_weibo():
         模拟登陆后，每一小时运行一次
         :return:
     """
-    MoblieWeibo().login('1939777358@qq.com', '123456a')
-    # 'odlmyfbw@sina.cn','tttt5555')#'1939777358@qq.com', '123456a')
+    MoblieWeibo().login('', '')
 
     while True:
         run()
