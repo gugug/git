@@ -25,8 +25,7 @@ class Run(WeiboPage):
 
 
 def main_weibo():
-    MoblieWeibo().login('odlmyfbw@sina.cn',
-                        'tttt5555')  # 'odlmyfbw@sina.cn','tttt5555')#'1939777358@qq.com', '123456a')
+    MoblieWeibo().login('', '')
     while True:
         Run(2803301701).run()
         print "即将休息一下"
