@@ -312,7 +312,7 @@ def count_time():
 
 
 if __name__ == '__main__':
-    MoblieWeibo().login('meilanyiyou419@163.com', 'aaa333')
+    MoblieWeibo().login('', '')
     print '正在模拟登录,开始时间: ', count_time()
     sina = Sina('rmrb')
     for name, acc in sina.hunter_account().items():
