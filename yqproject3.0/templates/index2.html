@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href={% static "styles/reset.css" %} />
+	<link rel="stylesheet" href={% static "styles/style.css" %}/>
+	<link rel="stylesheet" href={% static "styles/index.css" %} />
+	<script src={% static "scripts/modernizr.js" %}></script>
+</head>
+<body>
+	<div id="container">
+		<img src='{% static "images/title2.png" %}' alt="" id="title">
+		<img src='{% static "images/glasses2.png" %}' alt="" id="glasses">
+		<form id="search" action="{% url 'linechart' %}" name="SearchForm" method="post" enctype="multipart/form-data">
+			<input type="text" placeholder="搜索热点事件..." name="input_words" size="100">
+			<button type="submit">搜索</button>
+		</form>
+
+		<section class="cd-horizontal-timeline">
+			<div class="timeline">
+				<div class="events-wrapper">
+					<div class="events">
+						<ol>
+{#                            {% for dict in data %}#}
+{#                            {% for items in dict %}#}
+							<li><a href="#0" data-date="1/5/16" class="selected">{{ items.month }}月{{ items.day }}日
+                                <p>{{ items.topic }}</p></a></li>
+							<li><a href="#0" data-date="30/4/16">28 Feb<p>山东疫苗案</p>	</a></li>
+							<li><a href="#0" data-date="29/4/16">28 Feb<p>常州外国语污染事件</p>	</a></li>
+							<li><a href="#0" data-date="28/4/16">20 Mar<p>日本熊本县地震</p>	</a></li>
+							<li><a href="#0" data-date="27/4/16">20 May<p>网络主播18日起实名认证</p>	</a></li>
+							<li><a href="#0" data-date="25/4/16">09 Jul<p>东莞坍塌</p>	</a></li>
+							<li><a href="#0" data-date="7/4/16">30 Aug<p>泛亚有色涉嫌非法集资 </p>	</a></li>
+							<li><a href="#0" data-date="8/4/16">15 Sep<p>巴萨猝死</p>	</a></li>
+							<li><a href="#0" data-date="9/4/16">01 Nov</a></li>
+							<li><a href="#0" data-date="10/4/16">10 Dec</a></li>
+							<li><a href="#0" data-date="19/4/16">29 Jan</a></li>
+							<li><a href="#0" data-date="23/4/16">3 Mar</a></li>
+							<li><a href="#0" data-date="24/4/16">4 Mar</a></li>
+							<li><a href="#0" data-date="1/5/16">4 Mar</a></li>
+{#						{% endfor %}#}
+{#                        {% endfor %}#}
+                        </ol>
+						<span class="filling-line" aria-hidden="true"></span>
+					</div> <!-- .events -->
+				</div> <!-- .events-wrapper -->
+						
+				<ul class="cd-timeline-navigation">
+					<li><a href="#0" class="prev inactive">Prev</a></li>
+					<li><a href="#0" class="next">Next</a></li>
+				</ul> <!-- .cd-timeline-navigation -->
+			</div> <!-- .timeline -->
+		</section>
+	</div>
+	<script src="{% static 'scripts/jquery-2.1.1.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'scripts/main.js' %}"></script>
+{#		<script>#}
+{#		  	function goTo(){#}
+{#		  		window.open('lineChart.html')#}
+{#		}#}
+{#	</script>#}
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>折线图</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href={% static "styles/lineChart.css" %}>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<span  id="hamburger-icon" onclick="change()">
+				
+			</span>
+			<span class="more-icon" id="more-icon">
+				<img src={% static "images/more.png" %}>
+				<span class="hide" id="more-list">
+					<ul>
+						<li>关于我们</li>
+						<li>版权信息</li>
+					</ul>
+				</span>
+			</span>
+		</div>
+		<div id="pageBody">
+			<div id="sidebar">
+				<div id="title">
+					<h2>{{ event }}</h2>
+				</div>
+                <div>
+                    <p><span>转发量: </span>{{ rpt }}</p>
+                    <p><span>点赞量: </span>{{ lik }}</p>
+                    <p><span>评论量: </span>{{ cmt }}</p>
+                    <span class="con">
+                        <h4>博文:</h4>
+                        <p>{{ cnt }}</p>
+                        <h4>关键词:</h4>
+                        <p>{{ topic_words }}</p>
+                    </span>
+
+                </div>
+{#				<button id="haha">more</button>#}
+			</div>
+			<div id="content">
+				<div id="lineChart"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src={% static "scripts/jquery-1.10.1.js" %}></script>
+	<script type="text/javascript" src={% static "scripts/echarts-all.js" %}></script>
+	{% if default %}
+        <script type="text/javascript" src={% static "scripts/linechart.js" %}></script>
+    {% else %}
+        <script type="text/javascript" src={% static "scripts/line_chart.js" %}></script>
+    {% endif %}
+	<script type="text/javascript" src={% static "scripts/sidebarChange.js" %}></script>
+	<script>
+        var myChart = echarts.init(document.getElementById('lineChart'));
+		myChart.setOption(option);
+        myChart.on('click', function (params) {
+            window.open({% url "network" %});//+ encodeURIComponent(params.name));
+        });
+        var more_icon=document.getElementById('more-icon');
+		var more_list=document.getElementById('more-list');
+		// var more_lis=more_list.getElementsByTagName('li');
+		// var more_li1=more_lis[0];
+		more_icon.onclick=function(){
+			
+			if(more_list.className!='hide'){
+			more_list.className='hide';
+			}else{
+				more_list.className='show';
+			}
+		}
+		// more_list.onmouseout=function(){
+		// 	more_list.className='hide';
+		// }
+	</script>
+</body>
+</html>
