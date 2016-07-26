@@ -25,10 +25,7 @@ class Login:  # 模拟登陆
         self.headers = {'User-Agent': 'Mozilla/' + str(
             float(int(random.uniform(1, 6)))) + '(X11; Ubuntu; Linux i686; rv:35.0) Gecko/20100101 Firefox/' + str(
             float(int(random.uniform(29, 36))))}
-        self.account = [('cjmnkaok@sina.cn', 'tttt5555'), ('zcsicrod@sina.cn', 'tttt5555'),
-                        ('nmhzqmyn@sina.cn', 'tttt5555'), ('qpkprayq@sina.cn', 'tttt5555'),
-                        ('nmozupvc@sina.cn', 'tttt5555'),
-                        ('joxmyjep@sina.cn', 'tttt5555'), ('rhnpvsin@sina.cn', 'tttt5555')]
+        self.account = [ ] # 这里设置帐号密码的元组格式（帐号，密码）
 
     def getHostUrl(self):
         HostUrl = "http://login.weibo.cn/login/?backURL=&backTitle=&vt=4&revalid=2&ns=1"
