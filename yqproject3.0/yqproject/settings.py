@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'yqproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'yuqing',#'fig',
-        'USER':'yc',#'fig',
-        'PASSWORD':'uliuli520',#'fig',
-        'HOST':'127.0.0.1',#'192.168.235.36',#'192.168.235.36',#'127.0.0.1',#'192.168.1.120', #'192.168.1.26',
-        'PORT':'3306',
+        'NAME': '',
+        'USER':'',
+        'PASSWORD':'',
+        'HOST':'',
+        'PORT':'',
     }
 }
 
