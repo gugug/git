@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网络图</title>
+    {% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'styles/network.css' %}">
+<style>
+
+
+</style>
+</head>
+<body>
+    <div id="container">
+		<div id="header">
+			<span  id="hamburger-icon" onclick="change()">
+
+			</span>
+			<span class="more-icon" id="more-icon">
+				<img src={% static "images/more.png" %}>
+				<span class="hide" id="more-list">
+					<ul>
+						<li>关于我们</li>
+						<li>版权信息</li>
+					</ul>
+				</span>
+			</span>
+		</div>
+		<div id="pageBody">
+			<div id="sidebar">
+                <div id="siderbar-container">
+				<div id="title">
+					<h2>{{ event }}</h2>
+				</div>
+                <div class="content">
+                    <h4 class="core-subject">核心主体数</h4>
+                    <p class="subject-num">{{ scale }}</p>
+{#                    <span class="con">#}
+                    <h4 class="key-person">关键人物</h4>
+                    <form id="form1" runat="server">
+                    <div class="scrollNews" >
+                    <ul>
+                        {% for i in leader %}
+
+                        <li><p><a href="#" class="tooltip" title="{{ i }}">{{ i }}</a></p></li>
+
+                        {% endfor %}
+{#                    <li><a href="#" class="tooltip" title="甜美宽松毛衣今秋一定红.">甜美宽松毛衣.</a></li>#}
+{#                    <li><a href="#" class="tooltip" title="秋装百搭小马甲不到50元.">秋装百搭小马.</a></li>#}
+                    </ul>
+                    </div>
+                    </form>
+{#                        <br><br><br>#}
+{# <form id="form1" runat="server">#}
+{#<div class="scrollNews" >#}
+{#<ul>#}
+{#<li><a href="#" class="tooltip" title="甜美宽松毛衣今秋一定红.">甜美宽松毛衣.</a></li>#}
+{#<li><a href="#" class="tooltip" title="秋装百搭小马甲不到50元.">秋装百搭小马.</a></li>#}
+{#<li><a href="#" class="tooltip" title="修身韩版小西装万人疯抢.">修身韩版小西装</a></li>#}
+{#<li><a href="#" class="tooltip" title="夏末雪纺店主含泪大甩卖.">夏末雪纺</a></li>#}
+{#<li><a href="#" class="tooltip" title="瑞丽都疯狂推荐的秋装.">瑞丽都疯狂</a></li>#}
+{#<li><a href="#" class="tooltip" title="48元长款针织小开衫卖疯啦.">48元长款针织</a></li>#}
+{#<li><a href="#" class="tooltip" title="长袖雪纺衫单穿内搭都超美.">长袖雪纺衫超美</a></li>#}
+{#</ul>#}
+{#</div>#}
+{#</form>#}
+                        <a class="pic" id="pic" href=" "><img src="/static/{{ pic_dir }}" ><span id="pic_hover"><img src="/static/{{ pic_dir }}" ></span></a>
+
+{#                    </span>#}
+                </div>
+
+                </div>
+{#				<button id="haha">more</button>#}
+			</div>
+			<div id="content">
+				<div id="network"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="{% static 'scripts/jquery-1.10.1.js' %}"></script>
+	<script type="text/javascript" src="{% static 'scripts/vis.js' %}"></script>
+{#	<script type="text/javascript" src="{% static 'scripts/new.js' %}"></script>#}
+    <script type="text/javascript" src={% static "scripts/sidebarChange.js" %}></script>
+    <script language="javascript" type="text/javascript">
+    $(function () {
+var x = 20; //tooltip偏移鼠标的横坐标
+var y = 20; //tooptip偏移鼠标的纵坐标
+var myTitle;
+$("a.tooltip").mouseover(function (e) {
+
+	for(var i=0;i<($("a").length);i++){
+	$("a")[i].index=i;
+	}
+
+console.log($("a")[0].index);
+var contents=
+[
+    {% for i in info %}
+    '{{ i }}',
+    {% endfor %}
+
+];
+console.log(this.index);
+myTitle = '<h2>'+this.title+'<h2>';
+myContent='<p>'+contents[this.index]+'</p>';
+this.title = "";
+var tooltip = "<div id='tooltip'>" + myTitle +myContent+ "</div>";
+$(".scrollNews").append(tooltip);
+$("#tooltip").css({
+"top": (e.pageY + y) + "px",
+"left": (e.pageX + x) + "px"
+}).show("fast");
+}).mouseout(function () {
+this.title = myTitle;
+$("#tooltip").remove();
+}).mousemove(function (e) {
+$("#tooltip").css({
+"top": (e.pageY + y) + "px",
+"left": (e.pageX + x) + "px"
+});
+});
+});
+    </script>
+    <script>
+        var color = 'gray';
+	    var len = undefined;
+	    var container = document.getElementById('network');
+	    var data = {
+{#            nodes:nodes,#}
+{#            edges:edges,#}
+	        nodes: {{ node_data |safe }},
+	        edges: {{ edge_data |safe }}
+	    };
+	   	var options = {
+	            nodes: {
+	                shape: 'dot',
+	                size: 16
+	        	},
+	        	physics: {
+	            	forceAtlas2Based: {
+		                gravitationalConstant: -30,
+		                centralGravity: 0.02,
+		                springLength: 190,
+		                springConstant: 0.18
+	            	},
+		            maxVelocity: 100,
+		            solver: 'forceAtlas2Based',
+		            timestep: 0.35,
+		            stabilization: {iterations: 150}
+	        	}
+	    };
+	    network = new vis.Network(container, data, options); 
+	</script>
+    <script>
+        var pic=document.getElementById('pic');
+        var pic_hover=document.getElementById('pic_hover');
+        pic.onmouseenter = function(){
+            pic_hover.style.display='block';
+{#            pic.style.display="none";#}
+        }
+        pic_hover.onmouseleave = function(){
+            pic_hover.style.display="none";
+{#            pic.style.display="block";#}
+        }
+
+
+    </script>
+</body>
+</html>

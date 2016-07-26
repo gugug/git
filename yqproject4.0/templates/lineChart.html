@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>折线图</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href={% static "styles/lineChart.css" %}>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<span  id="hamburger-icon" onclick="change()">
+				
+			</span>
+			<span class="more-icon" id="more-icon">
+				<img src={% static "images/more.png" %}>
+				<span class="hide" id="more-list">
+					<ul>
+						<li>关于我们</li>
+						<li>版权信息</li>
+					</ul>
+				</span>
+			</span>
+		</div>
+		<div id="pageBody">
+			<div id="sidebar">
+				<div id="title">
+					<h2>{{ event }}</h2>
+				</div>
+                <div>
+                    <p class="statics"><span class="label">转发量</span><span class="num">{{ rpt }}</span></p>
+                    <p class="statics"><span class="label">点赞量</span><span class="num">{{ lik }}</span></p>
+                    <p class="statics"><span class="label">评论量</span><span class="num">{{ cmt }}</span></p>
+                    <span class="con">
+                        <h4>博文</h4>
+                        <p>{{ cnt }}</p>
+                        <h4>关键词</h4>
+                        <p class="kew-words">{{ topic_words }}</p>
+                    </span>
+
+                </div>
+{#				<button id="haha">more</button>#}
+			</div>
+			<div id="content">
+				<div id="lineChart"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src={% static "scripts/jquery-1.10.1.js" %}></script>
+	<script type="text/javascript" src={% static "scripts/echarts-all.js" %}></script>
+	{% if default %}
+        <script type="text/javascript" src={% static "scripts/lineChart.js" %}></script>
+    {% else %}
+        <script type="text/javascript" src={% static "scripts/line_chart.js" %}></script>
+    {% endif %}
+	<script type="text/javascript" src={% static "scripts/sidebarChange.js" %}></script>
+	<script>
+        var myChart = echarts.init(document.getElementById('lineChart'));
+		myChart.setOption(option);
+        myChart.on('click', function (params) {
+                if(params.name=="最大值"||params.name=="最小值"){
+                    var index=0;
+                    var mValue=params.value;
+                    for(var i=0;i<24;i++){
+                        if(option.series[0].data[i]==mValue){
+                            index=i;
+                            break;
+                        }
+                    }
+                    window.open('/network/'+ '{{ event_id }}'+'/' + encodeURIComponent(option.xAxis[0].data[index]));
+                }else {
+                    window.open('/network/'+ '{{ event_id }}'+'/' + encodeURIComponent(params.name));
+                }
+});
+        var more_icon=document.getElementById('more-icon');
+		var more_list=document.getElementById('more-list');
+		more_icon.onclick=function(){
+			
+			if(more_list.className!='hide'){
+			more_list.className='hide';
+			}else{
+				more_list.className='show';
+			}
+		};
+		// more_list.onmouseout=function(){
+		// 	more_list.className='hide';
+		// }
+	</script>
+</body>
+</html>
