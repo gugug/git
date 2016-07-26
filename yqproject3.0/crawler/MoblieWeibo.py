@@ -102,4 +102,4 @@ class MoblieWeibo:  # 模拟登陆
 
 
 
-# MoblieWeibo().login('18826103742', '18318210010')  # 734093894@qq.com   18826103742
+# MoblieWeibo().login('', '')
